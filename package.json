@@ -7,7 +7,6 @@
   "scripts": {
     "predoc": "rimraf docs",
     "doc": "esdoc -c esdoc.json",
-    "prebuild": "eslint lib",
     "build": "rollup -c rollup.config.umd.js",
     "prepublish": "npm run build",
     "pretest": "npm run build",
@@ -66,6 +65,7 @@
     "source-map-support": "^0.4.15"
   },
   "dependencies": {
+    "bignumber.js": "^9.1.1",
     "is-string": "^1.0.4",
     "object-assign": "^4.0.1"
   },
